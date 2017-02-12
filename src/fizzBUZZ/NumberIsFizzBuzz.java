@@ -1,5 +1,6 @@
 package fizzBUZZ;
 
+
 public class NumberIsFizzBuzz {
 
 	private static final int numeroFizz = 3;
@@ -19,6 +20,14 @@ public class NumberIsFizzBuzz {
 		if (esMultiplo(numero,numeroBuzz))
 			palabra = palabra+palabraBuzz;
 		return palabra;	
+	}
+	
+	public void visualizarEnPantalla(String palabra, int numero)
+	{
+		if(palabra=="")
+			System.out.println(numero);
+		else
+			System.out.println(palabra);
 	}
 	
 	

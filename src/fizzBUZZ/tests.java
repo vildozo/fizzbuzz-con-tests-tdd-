@@ -5,7 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class tests {
-
+	
+	
 	@Test
 	public void esMultiplo() 
 	{
@@ -59,9 +60,13 @@ public class tests {
 	@Test
 	public void mostrarFizz()
 	{
+		
 		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
-		int numero=3;
-		fizz_o_buzz.visualizarEnPantalla(numero);
-        assertEquals("Fizz",System.out);
+		int numero=4;
+		String palabra="";
+		fizz_o_buzz.visualizarEnPantalla(palabra,numero);
+		assertEquals("hello world", SystemOutRule.getLog());
+      
 	}
+	
 }
