@@ -4,11 +4,14 @@ public class NumberIsFizzBuzz {
 
 	private static final int numeroFizz = 3;
 	private static final int numeroBuzz = 5;
+	private static final String palabraFizz= "Fizz";
+	private static final String palabraBuzz= "Buzz";
 	
 	public static boolean esMultiplo(int numerador, int denominador){
 		return (numerador % denominador == 0);
 	}
 	
+
 	
 	public static void main(String[] args)
 	{

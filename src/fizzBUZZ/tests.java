@@ -15,5 +15,14 @@ public class tests {
 		assertTrue(fizz_o_buzz.esMultiplo(numerator, denominator));
 
 	}
+	
+	@Test
+	public void palabraEsFizz() 
+	{
+		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
+		int numero=8;
+		assertTrue(fizz_o_buzz.palabraFizzOBuzz(numero));
+
+	}
 
 }
