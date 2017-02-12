@@ -31,4 +31,11 @@ public class tests {
 		int numero=8;
 		assertEquals("",fizz_o_buzz.palabraFizzOBuzz(numero));
 	}
+	@Test
+	public void palabraEsBuzz() 
+	{
+		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
+		int numero=10;
+		assertEquals("Buzz",fizz_o_buzz.palabraFizzOBuzz(numero));
+	}
 }
