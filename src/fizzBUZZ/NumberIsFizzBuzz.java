@@ -1,6 +1,6 @@
 package fizzBUZZ;
 
-public class Program {
+public class NumberIsFizzBuzz {
 
 	
 	

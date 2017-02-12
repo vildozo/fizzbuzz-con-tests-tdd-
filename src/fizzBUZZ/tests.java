@@ -9,10 +9,10 @@ public class tests {
 	@Test
 	public void esMultiplo() 
 	{
-		Program progra = new Program();
+		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
 		int numerator=8;
 		int denominator=2;
-		assertTrue(progra.esMultiplo(numerator, denominator));
+		assertTrue(fizz_o_buzz.esMultiplo(numerator, denominator));
 
 	}
 
