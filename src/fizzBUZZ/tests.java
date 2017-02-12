@@ -22,7 +22,13 @@ public class tests {
 		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
 		int numero=9;
 		assertEquals("Fizz",fizz_o_buzz.palabraFizzOBuzz(numero));
-
 	}
-
+	
+	@Test
+	public void palabraNoEsFizz() 
+	{
+		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
+		int numero=8;
+		assertEquals("",fizz_o_buzz.palabraFizzOBuzz(numero));
+	}
 }
