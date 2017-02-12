@@ -6,63 +6,57 @@ import org.junit.Test;
 
 public class tests {
 	
-	NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
+	NumberIsFizzBuzz claseNumberIsFizzBuzz = new NumberIsFizzBuzz();
+	private static final int numeroFizz = 3;
+	private static final int numeroBuzz = 5;
+	private static final int numeroEsFizz = 6;
+	private static final int numeroEsBuzz = 50;
+	private static final int numeroNoEsFizzNiBuzz = 7;
+	private static final int numeroEsFizzBuzz = 30;
 	
 	@Test
 	public void esMultiplo1() 
 	{
-		int numerator=8;
-		int denominator=2;
-		assertTrue(fizz_o_buzz.esMultiplo(numerator, denominator));
-
+		assertTrue(claseNumberIsFizzBuzz.esMultiplo(numeroEsFizz, numeroFizz));
+	}
+	
+	@Test
+	public void noEsMultiplo1() 
+	{
+		assertFalse(claseNumberIsFizzBuzz.esMultiplo(numeroEsFizz,numeroBuzz ));
 	}
 	
 	@Test
 	public void palabraEsFizz2() 
 	{
-		int numero=9;
-		assertEquals("Fizz",fizz_o_buzz.palabraFizzOBuzz(numero));
+		assertEquals("Fizz",claseNumberIsFizzBuzz.palabraFizzOBuzz(numeroEsFizz));
 	}
 	
 	@Test
 	public void palabraNoEsFizz3() 
 	{
-		int numero=8;
-		assertEquals("",fizz_o_buzz.palabraFizzOBuzz(numero));
+		assertNotEquals("Fizz",claseNumberIsFizzBuzz.palabraFizzOBuzz(numeroNoEsFizzNiBuzz));
+		assertNotEquals("Fizz",claseNumberIsFizzBuzz.palabraFizzOBuzz(numeroEsBuzz));
 	}
 	
 	@Test
 	public void palabraEsBuzz4() 
 	{
-		int numero=10;
-		assertEquals("Buzz",fizz_o_buzz.palabraFizzOBuzz(numero));
+		assertEquals("Buzz",claseNumberIsFizzBuzz.palabraFizzOBuzz(numeroEsBuzz));
 	}
 	
 	@Test
 	public void palabraNoEsBuzz5() 
 	{
-		int numero=11;
-		assertEquals("",fizz_o_buzz.palabraFizzOBuzz(numero));
+		assertNotEquals("Buzz",claseNumberIsFizzBuzz.palabraFizzOBuzz(numeroNoEsFizzNiBuzz));
+		assertNotEquals("Buzz",claseNumberIsFizzBuzz.palabraFizzOBuzz(numeroEsFizz));
 	}
 	
 	@Test
 	public void palabraEsFizzBuzz6() 
 	{
-		int numero=30;
-		assertEquals("FizzBuzz",fizz_o_buzz.palabraFizzOBuzz(numero));
+		assertEquals("FizzBuzz",claseNumberIsFizzBuzz.palabraFizzOBuzz(numeroEsFizzBuzz));
 	}
-	
-	
-	
-	/*
-	@Test
-	public void mostrarFizz()
-	{
-		int numero=4;
-		String palabra="";
-		fizz_o_buzz.visualizarEnPantalla(numero);
-		assertEquals("hello world", SystemOutRule.getLog());
-	}*/
 	
 	
 }
