@@ -5,7 +5,7 @@ public class NumberIsFizzBuzz {
 	private static final int numeroFizz = 3;
 	private static final int numeroBuzz = 5;
 	
-	public boolean esMultiplo(int numerador, int denominador){
+	public static boolean esMultiplo(int numerador, int denominador){
 		return (numerador % denominador == 0);
 	}
 	
@@ -14,17 +14,17 @@ public class NumberIsFizzBuzz {
 	{
 		for(int numeroContador = 0; numeroContador < 100; numeroContador++)
 		{
-			if (numeroContador % numeroFizz == 0 && numeroContador % numeroBuzz == 0)
+			if (esMultiplo(numeroContador, numeroFizz) && esMultiplo(numeroContador, numeroBuzz))
 			{
 				System.out.println("FizzBuzz");                    
 			}
 			else 
-				if(numeroContador % numeroFizz == 0)
+				if(esMultiplo(numeroContador, numeroFizz))
 				{
 					System.out.println("Fizz");
 				}
 				else 
-					if(numeroContador % numeroBuzz == 0)
+					if(esMultiplo(numeroContador, numeroBuzz))
 					{
 						System.out.println("Buzz");
 					}
