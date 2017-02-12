@@ -16,6 +16,8 @@ public class NumberIsFizzBuzz {
 		String palabra="";
 		if (esMultiplo(numero,numeroFizz))
 			palabra = palabraFizz;
+		if (esMultiplo(numero,numeroBuzz))
+			palabra = palabraBuzz;
 		return palabra;
 		
 	}

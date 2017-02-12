@@ -45,6 +45,6 @@ public class tests {
 	{
 		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
 		int numero=11;
-		assertEquals("Buzz",fizz_o_buzz.palabraFizzOBuzz(numero));
+		assertEquals("",fizz_o_buzz.palabraFizzOBuzz(numero));
 	}
 }
