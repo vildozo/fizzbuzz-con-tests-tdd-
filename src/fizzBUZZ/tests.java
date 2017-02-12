@@ -15,39 +15,46 @@ public class tests {
 	private static final int numeroEsFizzBuzz = 30;
 	
 	@Test
-	public void esMultiplo1() {
+	public void esMultiplo1() 
+	{
 		assertTrue(claseNumberIsFizzBuzz.esMultiplo(numeroEsFizz, numeroFizz));
 	}
 	
 	@Test
-	public void noEsMultiplo1()	{
+	public void noEsMultiplo2() 
+	{
 		assertFalse(claseNumberIsFizzBuzz.esMultiplo(numeroEsFizz,numeroBuzz ));
 	}
 	
 	@Test
-	public void palabraEsFizz2() {
+	public void palabraEsFizz3() 
+	{
 		assertEquals("Fizz",claseNumberIsFizzBuzz.calcularFizzOBuzz(numeroEsFizz));
 	}
 	
 	@Test
-	public void palabraNoEsFizz3()	{
+	public void palabraNoEsFizz4() 
+	{
 		assertNotEquals("Fizz",claseNumberIsFizzBuzz.calcularFizzOBuzz(numeroNoEsFizzNiBuzz));
 		assertNotEquals("Fizz",claseNumberIsFizzBuzz.calcularFizzOBuzz(numeroEsBuzz));
 	}
 	
 	@Test
-	public void palabraEsBuzz4() {
+	public void palabraEsBuzz5() 
+	{
 		assertEquals("Buzz",claseNumberIsFizzBuzz.calcularFizzOBuzz(numeroEsBuzz));
 	}
 	
 	@Test
-	public void palabraNoEsBuzz5()	{
+	public void palabraNoEsBuzz6() 
+	{
 		assertNotEquals("Buzz",claseNumberIsFizzBuzz.calcularFizzOBuzz(numeroNoEsFizzNiBuzz));
 		assertNotEquals("Buzz",claseNumberIsFizzBuzz.calcularFizzOBuzz(numeroEsFizz));
 	}
 	
 	@Test
-	public void palabraEsFizzBuzz6() {
+	public void palabraEsFizzBuzz7() 
+	{
 		assertEquals("FizzBuzz",claseNumberIsFizzBuzz.calcularFizzOBuzz(numeroEsFizzBuzz));
 	}
 	
