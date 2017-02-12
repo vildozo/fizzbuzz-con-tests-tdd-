@@ -17,10 +17,10 @@ public class NumberIsFizzBuzz {
 		if (esMultiplo(numero,numeroFizz))
 			palabra = palabraFizz;
 		if (esMultiplo(numero,numeroBuzz))
-			palabra = palabraBuzz;
-		return palabra;
-		
+			palabra = palabra+palabraBuzz;
+		return palabra;	
 	}
+	
 	
 	public static void main(String[] args)
 	{

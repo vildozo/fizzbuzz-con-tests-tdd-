@@ -47,4 +47,21 @@ public class tests {
 		int numero=11;
 		assertEquals("",fizz_o_buzz.palabraFizzOBuzz(numero));
 	}
+	
+	@Test
+	public void palabraEsFizzBuzz() 
+	{
+		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
+		int numero=30;
+		assertEquals("FizzBuzz",fizz_o_buzz.palabraFizzOBuzz(numero));
+	}
+	
+	@Test
+	public void mostrarFizz()
+	{
+		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
+		int numero=3;
+		fizz_o_buzz.visualizarEnPantalla(numero);
+        assertEquals("Fizz",System.out);
+	}
 }
