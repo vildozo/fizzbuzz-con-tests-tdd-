@@ -1,8 +1,6 @@
 package fizzBUZZ;
 
-
 public class NumberIsFizzBuzz {
-
 	private static final int numeroFizz = 3;
 	private static final int numeroBuzz = 5;
 	private static final String palabraFizz= "Fizz";
@@ -12,7 +10,7 @@ public class NumberIsFizzBuzz {
 		return (numerador % denominador == 0);
 	}
 	
-	public String palabraFizzOBuzz(int numero)
+	public static String palabraFizzOBuzz(int numero)
 	{	
 		String palabra="";
 		if (esMultiplo(numero,numeroFizz))
@@ -22,35 +20,20 @@ public class NumberIsFizzBuzz {
 		return palabra;	
 	}
 	
-	public void visualizarEnPantalla(String palabra, int numero)
+	public static void visualizarEnPantalla(int numero)
 	{
+		String palabra=palabraFizzOBuzz(numero);
 		if(palabra=="")
 			System.out.println(numero);
 		else
 			System.out.println(palabra);
 	}
 	
-	
 	public static void main(String[] args)
 	{
 		for(int numeroContador = 0; numeroContador < 100; numeroContador++)
 		{
-			if (esMultiplo(numeroContador, numeroFizz) && esMultiplo(numeroContador, numeroBuzz))
-			{
-				System.out.println("FizzBuzz");                    
-			}
-			else 
-				if(esMultiplo(numeroContador, numeroFizz))
-				{
-					System.out.println("Fizz");
-				}
-				else 
-					if(esMultiplo(numeroContador, numeroBuzz))
-					{
-						System.out.println("Buzz");
-					}
-					else
-						System.out.println(numeroContador);
+			visualizarEnPantalla(numeroContador);
         }
     }	
 }

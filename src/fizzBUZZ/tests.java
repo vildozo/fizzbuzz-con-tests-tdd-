@@ -6,11 +6,11 @@ import org.junit.Test;
 
 public class tests {
 	
+	NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
 	
 	@Test
-	public void esMultiplo() 
+	public void esMultiplo1() 
 	{
-		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
 		int numerator=8;
 		int denominator=2;
 		assertTrue(fizz_o_buzz.esMultiplo(numerator, denominator));
@@ -18,55 +18,51 @@ public class tests {
 	}
 	
 	@Test
-	public void palabraEsFizz() 
+	public void palabraEsFizz2() 
 	{
-		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
 		int numero=9;
 		assertEquals("Fizz",fizz_o_buzz.palabraFizzOBuzz(numero));
 	}
 	
 	@Test
-	public void palabraNoEsFizz() 
+	public void palabraNoEsFizz3() 
 	{
-		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
 		int numero=8;
 		assertEquals("",fizz_o_buzz.palabraFizzOBuzz(numero));
 	}
 	
 	@Test
-	public void palabraEsBuzz() 
+	public void palabraEsBuzz4() 
 	{
-		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
 		int numero=10;
 		assertEquals("Buzz",fizz_o_buzz.palabraFizzOBuzz(numero));
 	}
 	
 	@Test
-	public void palabraNoEsBuzz() 
+	public void palabraNoEsBuzz5() 
 	{
-		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
 		int numero=11;
 		assertEquals("",fizz_o_buzz.palabraFizzOBuzz(numero));
 	}
 	
 	@Test
-	public void palabraEsFizzBuzz() 
+	public void palabraEsFizzBuzz6() 
 	{
-		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
 		int numero=30;
 		assertEquals("FizzBuzz",fizz_o_buzz.palabraFizzOBuzz(numero));
 	}
 	
+	
+	
+	/*
 	@Test
 	public void mostrarFizz()
 	{
-		
-		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
 		int numero=4;
 		String palabra="";
-		fizz_o_buzz.visualizarEnPantalla(palabra,numero);
+		fizz_o_buzz.visualizarEnPantalla(numero);
 		assertEquals("hello world", SystemOutRule.getLog());
-      
-	}
+	}*/
+	
 	
 }
