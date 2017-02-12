@@ -20,7 +20,7 @@ public class tests {
 	public void palabraEsFizz() 
 	{
 		NumberIsFizzBuzz fizz_o_buzz = new NumberIsFizzBuzz();
-		int numero=8;
+		int numero=9;
 		assertEquals("Fizz",fizz_o_buzz.palabraFizzOBuzz(numero));
 
 	}

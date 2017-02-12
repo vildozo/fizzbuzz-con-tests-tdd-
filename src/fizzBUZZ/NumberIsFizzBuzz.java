@@ -11,7 +11,14 @@ public class NumberIsFizzBuzz {
 		return (numerador % denominador == 0);
 	}
 	
-
+	public String palabraFizzOBuzz(int numero)
+	{	
+		String palabra="";
+		if (esMultiplo(numero,numeroFizz))
+			palabra = palabraFizz;
+		return palabra;
+		
+	}
 	
 	public static void main(String[] args)
 	{
