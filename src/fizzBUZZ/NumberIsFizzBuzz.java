@@ -10,27 +10,23 @@ public class NumberIsFizzBuzz {
 		return (numerador % denominador == 0);
 	}
 	
-	public static String palabraFizzOBuzz(int numero)
-	{	
+	public static String calcularFizzOBuzz(int numero){	
 		String palabra="";
 		if (esMultiplo(numero,numeroFizz))
 			palabra = palabraFizz;
 		if (esMultiplo(numero,numeroBuzz))
 			palabra = palabra+palabraBuzz;
+		if (palabra == "")
+			palabra = numero + "";
 		return palabra;	
 	}
 	
-	public static void visualizarEnPantalla(int numero)
-	{
-		String palabra=palabraFizzOBuzz(numero);
-		if(palabra=="")
-			System.out.println(numero);
-		else
-			System.out.println(palabra);
+	public static void visualizarEnPantalla(int numero)	{
+		String palabra=calcularFizzOBuzz(numero);
+		System.out.println(palabra);
 	}
 	
-	public static void main(String[] args)
-	{
+	public static void main(String[] args)	{
 		for(int numeroContador = 0; numeroContador < 100; numeroContador++)
 		{
 			visualizarEnPantalla(numeroContador);
